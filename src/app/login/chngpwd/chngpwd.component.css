@@ -1,0 +1,32 @@
+body {
+    background-image: url(../../../../img/secondimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    position: fixed;
+    left: 35%;
+    color: white;
+}
+.mt-3, .my-3 {
+    margin-top: 3rem !important;
+}
+form {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}

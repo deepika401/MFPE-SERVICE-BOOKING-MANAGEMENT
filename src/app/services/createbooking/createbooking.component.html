@@ -1,0 +1,38 @@
+<form #createbooking="ngForm" (ngSubmit)="getCreatedata(createbooking.value)">
+    <div class="mb-3">
+      <label for="id"  class="form-label">Enter Id</label>
+      <input type="text" ngModel class="form-control" name="id" placeholder="Enter an id">
+      
+    </div>
+    <div class="mb-3">
+      <label for="productId" class="form-label">Enter the Product Id</label>
+      <input type="text" ngModel class="form-control" name="productId" placeholder="Enter the product id">
+    </div>
+
+    <div class="mb-3">
+        <label for="userId" class="form-label">Enter the User Id</label>
+        <input type="text" ngModel class="form-control" name="userId" placeholder="Enter the user id">
+      </div>
+      <div class="mb-3">
+        <label for="regDate" class="form-label">Enter the registered date </label>
+        <input type="date" ngModel class="form-control" name="regDate" placeholder="Enter the date of the registeration of service booking">
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input type="text-area" ngModel class="form-control" name="description" placeholder="Describe your problem here.. ">
+      </div>
+      <div class="mb-3">
+        <label for="problem" class="form-label">Enter the Problem</label>
+        <input type="text" ngModel class="form-control" name="problem" placeholder="Enter the problem">
+      </div>
+      <div class="mb-3">
+        <label for="status" class="form-label">Enter the Status</label>
+        <input type="text" ngModel class="form-control" name="status" placeholder="Enter the status (resolved/pending)">
+      </div>
+    
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="Check1">Confirm Booking</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

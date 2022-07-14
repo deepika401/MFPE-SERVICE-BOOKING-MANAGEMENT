@@ -1,0 +1,64 @@
+body {
+    background-image: url(BACKGROUND/secondimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2 {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    position: fixed;
+    left: 35%;
+    color: white;
+   
+}
+h3 {
+    padding-top:20px;
+    margin: 0 auto;
+    position: fixed;
+    left: 45%;
+    color: white;
+}
+.form-title {
+    padding: 20px;
+}
+.mt-3, .my-3 {
+    margin-top: 2rem !important;
+}
+.form-title container{
+   padding-top:2%;
+}
+.profile-contents {
+    padding: 20px;
+    border: 1px solid black;
+    width: 500px;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:antiquewhite
+}
+
+form {
+    text-align: left;
+}
+
+.fa-user-circle {
+    font-size: 150px;
+    padding: 20px;
+    color: #007bff;
+}
+
+.change-password {
+    padding: 10px;
+}
+
+.submit {
+    padding: 10px;
+}
+
+.form-title{
+     padding: 10px ;
+}

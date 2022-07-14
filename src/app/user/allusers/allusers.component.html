@@ -1,0 +1,30 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Password</th>
+        <th>Email</th>
+        <th>Mobile Number</th>
+        <th>Registration Date</th>
+       
+        <th>View User</th>
+        <th>Update User</th>
+        <th>Delete User</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor= "let b of UsersList; let i be index">
+                 <td> {{b.id}} </td>
+                 <td> {{b.name}} </td>
+                 <td> {{ b.password }} </td>
+                 <td> {{b.email}} </td>
+                 <td> {{b.mobile}} </td>
+                 <td> {{b.registrationDate}} </td>
+                 <td><a class="btn btn-sm text-white btn-outline-primary" [routerLink]="['/viewuser/'+b.id]">View</a></td>
+                 <td><a class="btn btn-sm text-white btn-outline-primary" [routerLink]="['/update/'+b.id]" >Update</a></td>
+                 <td><a class="btn btn-sm text-white btn-outline-primary" (click)="delete(b.id)">Delete</a></td>
+            </tr>
+    </tbody>
+    </table>
+

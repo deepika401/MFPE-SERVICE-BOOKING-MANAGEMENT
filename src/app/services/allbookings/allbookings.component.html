@@ -1,0 +1,26 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>ProductId</th>
+        <th>UserId</th>
+        <th>RegDate</th>
+        <th>Problem</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>View Booking</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor= "let b of booking">
+                 <td> {{b.id}} </td>
+                 <td> {{b.productId}} </td>
+                 <td> {{b.userId}} </td>
+                 <td> {{ b.regDate }} </td>
+                 <td> {{b.problem}} </td>
+                 <td> {{b.description}} </td>
+                 <td> {{b.status}} </td>
+                 <td><a class="btn btn-sm text-white btn-outline-primary" [routerLink]="['/viewbooking/'+b.id]">View</a></td>
+            </tr>
+    </tbody>
+    </table>

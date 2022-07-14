@@ -1,0 +1,30 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th>Report_Id</th>
+        <th>Service_Id</th>
+        <th>Report_Date</th>
+        <th>Service_Type</th>
+        <th>Action_Taken</th>
+        <th>Diagonsis_Details</th>
+        <th>IsPaid</th>
+        <th>Visit_Fees</th>
+        <th>Repair_Details</th>
+        <th>View Report</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor= "let r of ReportList">
+                <td>{{r.id}}</td>
+                <td>{{r.serReqId}}</td>
+                <td>{{r.reportDate}}</td>
+                <td>{{r.serviceType}}</td>
+                <td>{{r.actionTaken}}</td>
+                <td>{{r.diagnosisDetails}}</td>
+                <td>{{r.isPaid}}</td>
+                <td>{{r.visitFees}}</td>
+                <td>{{r.repairDetails}}</td>
+                <td><a class="btn btn-sm text-dark btn-outline-primary" [routerLink]="['/viewreport/'+r.id]">View</a></td>
+             </tr>
+    </tbody>
+    </table>

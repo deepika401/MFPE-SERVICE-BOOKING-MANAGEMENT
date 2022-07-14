@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Cost</th>
+        <th>Created Date</th>
+        <th>View Product</th>
+        <th>Update Product</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor= "let p of products">
+                 <td> {{p.id}} </td>
+                 <td> {{p.name}} </td>
+                 <td> {{p.make}} </td>
+                 <td> {{p.model }} </td>
+                 <td>{{p.cost}}</td>
+                 <td>{{p.createdDate}}</td>
+                 <td><a class="btn btn-sm text-white btn-outline-primary" [routerLink]="['/viewproduct/'+p.id]">View</a></td>
+                 <td><a class="btn btn-sm text-white btn-outline-primary" [routerLink]="['/updateproduct/'+p.id]">Update</a></td>
+                </tr>
+    </tbody>
+    </table>
+
